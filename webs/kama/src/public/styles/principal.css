@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    padding-top: 100px;
+    width: 1500px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(217, 184, 225);
+}
+
+h1,h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 20px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 20px;
+    
+}
+
+.contenedor div img:hover{
+    width: 210px;
+    height: 210px;
+    box-shadow: 5px 5px #888888;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.dificultad{
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+
+.button {
+    background-color: #8b4caf;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 45%;
+    margin-top: 10px;
+}
+
+.buttonAtras {
+    background-color: #8b4caf;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 45%;
+    margin-top: 10px;
+    width: 125px;
+    height: 80px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.buttonAtras:hover {
+    cursor: pointer;
+}
+
+.imagePosicio{
+    margin-left: 30%;
+}

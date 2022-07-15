@@ -1,0 +1,38 @@
+{{#each DadesPersonatges}}
+	<div class="tarjeta">
+		<div class="primera">
+			<table>
+				<tbody>
+					<tr>
+						<td rowspan="3"><img src="../../images/{{idPersonatge}}.jpg" alt="" style="width: 150px;  height: 150px;"></td>
+						<td colspan="6" class="item_tarjeta_titol">{{Nom}}</td>
+					</tr>
+					<tr>
+						<td class="item_tarjeta_estadistiques">Clase</td>
+						<td class="item_tarjeta_estadistiques">Stars</td>
+						<td class="item_tarjeta_estadistiques">HP</td>
+						<td class="item_tarjeta_estadistiques">ATK</td>
+						<td class="item_tarjeta_estadistiques">RANK</td>
+						<td class="item_tarjeta_estadistiques">LVL</td>
+					</tr>
+					<tr>
+						<td class="item_tarjeta_estadistiques2">{{clase}}</td>
+						<td class="item_tarjeta_estadistiques2">{{stars}}</td>
+						<td class="item_tarjeta_estadistiques2">{{hp}}</td>
+						<td class="item_tarjeta_estadistiques2">{{atk}}</td>
+						<td class="item_tarjeta_estadistiques2">{{rango}}</td>
+						<td class="item_tarjeta_estadistiques2">{{lvl}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="item_tarjeta_descripcion">
+			<h2 class="titulo_descripcion">Pasiva</h2>
+			<p class="descripcio_tarjeta">{{descripcioPasiva}}</p>
+		</div>
+		<div class="item_tarjeta_descripcion">
+			<h2 class="titulo_descripcion">Bio</h2>
+			<p class="descripcio_tarjeta">{{descripcioPers}}</p>
+		</div>
+	</div>
+{{/each}}

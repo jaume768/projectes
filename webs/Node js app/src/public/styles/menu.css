@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Formulari{
+    margin-right: 300px;
+    margin-left: 300px;
+    padding: 5px;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    background-color: rgb(187, 187, 187);
+    color: rgb(0, 0, 0);
+    height: 70px;
+}
+
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /*amb aixo gestion l'espai entre la imatge i les opcions*/
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.menu_links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+}
+
+.menu_item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    /* Les seguents lineas son per crear les animacions amb css dels submenus desaparaguent*/
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(0);
+}
+
+.menu_link{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu_link:hover{
+    background-color:rgb(13, 128, 89);
+}
+
+.menu_item:hover{
+    /* Les seguents lineas son per crear les animacions amb css dels submenus aparaguent*/
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(90deg);
+}
+
+.menu_fletxa{
+    /* aixo es per fer que la imatge de la fletxa roti al moment de posar el mouse damunt*/
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+
+.menu_nesting{
+    clip-path: var(--clip);
+    transition: clip-path .3s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: rgb(187, 187, 187);
+}
+
+.menu_link--inside{
+    padding: 30px 100px 20px 20px;
+}
+
+.menu_link--inside:hover{
+    background-color:rgb(13, 128, 89);
+}
+
+.menu_desplegable{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu_img{
+    display: block;
+}
+
+@media(max-width:1000px){
+
+    .menu_desplegable{
+        display: flex;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        column-gap: 30px;
+        align-items: center;
+    }
+
+    .tarjeta{
+        overflow: hidden;
+        min-width: 300px;
+        height: 300px;
+        box-shadow: 5px 10px #888888;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .menu_links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(187, 187, 187);
+        overflow-y: auto;
+        display: grid; /*aquesta linea i la seguent es per crear la forma en vertical del menu */
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu_link{
+        padding: 25px;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    /*Aquesta classe s'introdueix per javascript al moment de voler desplegar el menu*/
+    .menu_links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    /*aixo coloca la fletxa a la part dreta del menu*/
+    .menu_fletxa{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    /*aixo es per crear un espai als submenus*/
+    .menu_nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        /*amb les 2 seguents lineas puc crear que els submenus no surtin de manera automatica, despres amb javascript es pot fer el efecta que surt al moment del click*/
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu_link--inside{
+        width: 90%;
+        margin-right: 0;
+        border-left: 1px solid rgb(13, 128, 89);
+    }
+
+    .menu_item{
+        --clip:0;
+        overflow: hidden;
+    }
+
+    /*cream la clase que s'introdueix o es suprimeix (als elements que tenen la clase .menu_item--show) per javascript al moment del click*/
+
+    .menu_item--active{
+        --transform: rotate(90deg);
+        --background: rgb(13, 128, 89);
+    }
+
+    .menu_item--show{
+        /*sa variable background es creada a la clase que s'introduiex o es suprimeix amb javascript mes abaix*/
+        background-color: var(--background);
+    }
+}

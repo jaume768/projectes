@@ -1,0 +1,56 @@
+.tarjeta{
+    width: 500px;
+    border: 2px solid #008811;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.item_tarjeta_titol{
+    width: 100%;
+    background-color: #02d815;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+.item_tarjeta_estadistiques{
+    background-color: #02d815;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+.item_tarjeta_estadistiques2{
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+.item_tarjeta_descripcion{
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+.primera{
+    border: #000000;
+}
+
+.items_devall_titol{
+    display: flex;
+    text-align: center;
+}
+
+.titulo_descripcion{
+
+    background-color: #02d815;
+    text-align: center;
+    border: 2px solid #000000;
+
+}
+
+.descripcio_tarjeta{
+    text-align: justify;
+    border: 2px solid #000000;
+    padding: 5px;
+}

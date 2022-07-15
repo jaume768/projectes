@@ -1,0 +1,41 @@
+.container{
+    color:#f0f9ff;
+    background-color:#282d32;
+    padding: 50px;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.text{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.item_footer{
+    margin-top: 10px;
+    width: 300px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.links_footer{
+    color: aqua;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding-top: 5px;
+}
