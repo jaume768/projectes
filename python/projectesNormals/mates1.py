@@ -12,7 +12,6 @@
 #-- * la igualdad de 4 elementos,
 #-- * el máximo de 3 elementos,
 #Ejercicios de programación funcional (2011–12)
-#-- * la división segura y
 #-- * el área de un triángulo mediante la fórmula de Herón.
 
 def primero():

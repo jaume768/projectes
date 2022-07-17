@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.headerContenidor{
+    background-image: url(./imatges/mee.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-content{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 12%;
+}
+
+main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoPersonal div{
+    padding: 20px;
+}
+
+.quienSoy P{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.quienSoy a{
+    margin-left: 10px;
+}
+
+.DescCV{
+    background-color: #4c77af;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.miContacto ul{
+    margin-top: 10px;
+    list-style: none;
+}
+
+.Experiencia{
+    padding: 20px;
+}
+
+.Experiencia > div{
+    padding: 5px;
+    border: solid rgb(84, 84, 84) 0.5px;
+}
+
+.Educacion h3{
+    margin-top: 15px;
+}
+
+.Educacion h3,p{
+    margin-left: 15px;
+}
+
+.FotoNormal{
+    width: 30%;
+}
+
+.FotoGrosa{
+    width: 20%;
+}
+
+.FotoPetita{
+    width: 40%;
+}
+
+.git{
+    margin-left: 20px;
+}
+
+.Idiomas ul{
+    margin-left: 10px;
+    margin-top: 10px;
+    list-style: none;
+}
