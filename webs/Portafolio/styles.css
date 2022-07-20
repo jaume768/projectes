@@ -119,3 +119,7 @@ main{
 .habilidades img{
     margin-left: 10px;
 }
+
+.habilidades ul{
+    padding-left: 20px;
+}

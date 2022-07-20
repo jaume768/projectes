@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.boto {
+    background-color: #13589d; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+.boto1 {
+    margin-top: 20px;
+    background-color: #13589d; 
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+h2,h1{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+h2{
+    margin-bottom: 10%;
+}
+
+.Principal{
+    background-image: url(xd2.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.Principal2{
+    background-image: url(xdd.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+form{
+    padding: 100px;
+    padding-bottom: 100px;
+}
+
+form > div {
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
