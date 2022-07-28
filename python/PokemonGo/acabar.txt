@@ -1,0 +1,5 @@
+1- Primer encriptar informació de la base de dades o que no puguin veure es codi font
+2- Millorar la base de dades (per els usuaris amb ses keys)
+3- Treure totes les macs del pc, i mirar de que nomes furuli amb una clau
+4- Acabar es codi des pokemon (pokeparadas, gimnasios, pokemons)
+5- Refactoritzar tot el codi
