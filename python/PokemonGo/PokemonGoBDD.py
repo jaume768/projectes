@@ -4,7 +4,7 @@ import time
 import pokemons
 
 cordenadasPokeball = 928,920 
-cordenadasTirarPokeball = 936,650  
+cordenadasTirarPokeball = 936,550  
 
 def sercarPokemons():
     contador = 22
@@ -133,6 +133,14 @@ def mirarSiEstasACamp():
     return camp    
 
 def SalirDeTodo():
+    pyautogui.click(1218, 64)
+    time.sleep(0.5)
+    pyautogui.click(1218, 64)
+    time.sleep(0.5)
+    pyautogui.click(1218, 64)
+    time.sleep(0.5)
+    pyautogui.click(1218, 64)
+    time.sleep(0.5)
     pyautogui.click(1900 ,961)
     time.sleep(0.5)
     pyautogui.click(1900 ,961)
