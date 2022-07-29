@@ -23,12 +23,13 @@ litleo2 = (118,  98,  88)
 porigon = (245,  72,  95)
 porigon2 = (170,  44,  61)
 
-Evee1 = (227, 159,  85)
-Evee2 = (234, 165,  86)
+Evee1 = (229, 160,  84)
+Evee2 = (208, 147,  78)
 Evee3 = (200, 142,  75)
 Evee4 = (234, 162,  84)
 Evee5 = (224, 155,  80)
 Evee6 = (216, 152,  81)
+
 
 Bidoof1 = (194, 147,  76)
 Bidoof2 = (204, 163,  89)
@@ -81,9 +82,9 @@ Fletchling1 = (245, 128,  77)
 Fletchling2 = (250, 132,  76)
 Fletchling3 = (181,  87,  49)
 
-Pansear1 = (254, 117, 114)
+Pansear1 = (228, 107,  99)
 Pansear2 = (233, 111, 103)
-Pansear3 = (255, 115, 113)
+Pansear3 = (196,  89,  75)
 
 Blitzle1 = ( 77,  75,  81)
 Blitzle2 = ( 77,  75,  79)
@@ -104,7 +105,7 @@ Froakie3 = (105, 200, 225)
 roggwnrola1 = ( 67,  82, 100)
 roggwnrola2 = ( 63,  79, 104)
 
-Lillipup1 = (216, 157, 118)
+Lillipup1 = (219, 159, 120)
 Lillipup2 = (183, 123,  88)
 Lillipup3 = (191, 122,  86)
 
@@ -120,8 +121,8 @@ Machop1 = (143, 181, 196)
 Machop2 = (129, 175, 193)
 Machop3 = (122, 157, 176)
 
-Geodude1 = (186, 207, 230)
-Geodude2 = (171, 189, 212)
+Geodude1 = (154, 159, 159)
+Geodude2 = (149, 149, 144)
 Geodude3 = (145, 162, 186)
 
 Rhyhorn1 = (152, 168, 189)
@@ -215,10 +216,21 @@ voltrobAlola3 = (181,  74,  12)
 wurmple1 = (228,  98, 100)
 wurmple2 = (234, 103, 104)
 wurmple3 = (227, 102, 105)
+wurmple4 = (197,  86,  89)
+wurmple5 = (218,  91,  95)
+wurmple6 = (222,  98, 102)
 
 buizel1 = (229, 127,  64)
 buizel2 = (226, 125,  62)
 buizel3 = (229, 127,  63)
+
+electabuzz1 = (228, 190,  95)
+electabuzz2 = (231, 197, 103)
+electabuzz3 = (227, 188,  92)
+
+tangela1 = ( 99, 146, 181)
+tangela2 = ( 94, 140, 192)
+tangela3 = ( 57,  87, 126)
 
 pokemon = [slugma1,slugma2,slugma3,
         starly,starly2,starly3,
@@ -261,4 +273,7 @@ pokemon = [slugma1,slugma2,slugma3,
         voltrobAlola2,voltrobAlola3,
         wurmple1,wurmple2,wurmple3,
         Evee4,Evee5,Evee6,buizel1,
-        buizel2,buizel3]        
+        buizel2,buizel3,electabuzz1,
+        electabuzz2,electabuzz3,tangela1,
+        tangela2,tangela3,wurmple4,
+        wurmple5,wurmple6]        

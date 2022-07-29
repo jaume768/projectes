@@ -51,7 +51,8 @@ def mirarSiPokemonPetat():
     screenshot = pyautogui.screenshot()
     comensar = x,y
     pixel = screenshot.getpixel(comensar)
-    if pixel == BotoAdimPokes:     
+    if pixel == BotoAdimPokes: 
+        print("Tranferiendo pokemons...")    
         pyautogui.click(comensar)
         time.sleep(1)
         transferirPokemons()
@@ -68,7 +69,7 @@ def mirarSiEsPokeparada():
         comensar = x_inici,y_inici
         pixel = screenshot.getpixel(comensar)
         if pixel == botoPokeparada:
-            print("sortint de sa pokeparada")
+            print("Girando y saliendo de la pokeparada...")
             pyautogui.mouseDown( 760 ,523)
             pyautogui.moveTo(1128 , 504)
             pyautogui.mouseUp()
@@ -84,6 +85,7 @@ def mirarSiEsPokeparada():
             contador = 10
 
 def tirarPokeball():
+    print("Capturando pokemon...")
     pyautogui.mouseDown(cordenadasPokeball) 
     pyautogui.moveTo(cordenadasTirarPokeball)
     pyautogui.mouseUp()   
@@ -102,9 +104,11 @@ def mirarSiAtrapat():
         comensar = x_inici,y_inici
         pixel = screenshot.getpixel(comensar)
         if pixel == botoAtrapat:
+            print("Pokemon atrapado!!")
             pyautogui.click(comensar)
             time.sleep(5)
             pyautogui.click(940 ,  963) 
+            time.sleep(1)
             contador = 10
         if pixel != botoAtrapat:
             x_inici += 1
@@ -113,6 +117,38 @@ def mirarSiAtrapat():
             y_inici += 1
         if y_inici == y_final:  
             contador = 10    
+
+def mirarSiEstasACamp():
+    x = 959
+    y = 944
+    BotoAdimPokes = (255,  57,  69)
+    screenshot = pyautogui.screenshot()
+    comensar = x,y
+    camp = False
+    pixel = screenshot.getpixel(comensar)
+    if pixel == BotoAdimPokes: 
+        camp = True
+        return camp
+
+    return camp    
+
+def SalirDeTodo():
+    pyautogui.click(1900 ,961)
+    time.sleep(0.5)
+    pyautogui.click(1900 ,961)
+    time.sleep(0.5)
+    pyautogui.click(1900 ,961)
+    time.sleep(0.5)
+    pyautogui.click(1900 ,961)
+    time.sleep(0.5)
+    x = 1060
+    y = 537
+    BotoAdimPokes = ( 45, 205, 169)
+    screenshot = pyautogui.screenshot()
+    comensar = x,y
+    pixel = screenshot.getpixel(comensar)
+    if pixel == BotoAdimPokes: 
+        pyautogui.click(1900 ,961)
 
 def transferirPokemons():
     BotoTransferir = 946 , 959

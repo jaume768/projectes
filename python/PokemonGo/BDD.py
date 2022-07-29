@@ -25,7 +25,7 @@ def ComprovarUsuaris():
     conexio = False
     while(conexio == False):
         clauUsuari = input("Dime tu clave: ")
-        for x in claus:
+        for x in claus: 
             if (x[1] == clauUsuari):
                 sql2 = "SELECT * FROM claus WHERE clau = %s"
                 cursor.execute(sql2,(clauUsuari,)) 
@@ -45,8 +45,15 @@ def ComprovarUsuaris():
                     print("No es tu llave, compra otra")                    
 
         if (conexio == True):
+            contador = 0
             while True:
+                contador = contador + 1
                 PokemonGoBDD.sercarPokemons()
+                if (contador > 59 and PokemonGoBDD.mirarSiEstasACamp() == False):
+                    PokemonGoBDD.SalirDeTodo()
+                    contador = 0
+                if (contador > 59 and PokemonGoBDD.mirarSiEstasACamp() == True):
+                    contador = 0    
         else:
             print("Llave incorrecta...")
 
