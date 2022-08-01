@@ -1,12 +1,7 @@
-1- Primer encriptar informació de la base de dades o que no puguin veure es codi font (Fet)
 4- Acabar es codi des pokemon (pokeparadas, gimnasios, pokemons)
     - Falta que agafi molts mes pokemons
     - Falta que agafi pokeparadas
-5- Refactoritzar tot el codi
-6- Fer server de discord
-    - tipos de rangos
-    - chats personalitzats
-7- Fer es video a youtube y posar es server de discord y es patreon   
+5- Refactoritzar tot el codi 
 
 Fer una versió gratis (beta), per es public, que me reportin es errors i deixar un patreon per tenir
 un canal de discrod privat amb sa gent, tenir un bot premium, y jo poder viure millorant es bot.

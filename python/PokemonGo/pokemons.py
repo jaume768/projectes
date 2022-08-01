@@ -232,6 +232,14 @@ tangela1 = ( 99, 146, 181)
 tangela2 = ( 94, 140, 192)
 tangela3 = ( 57,  87, 126)
 
+heatmor1 = (144,  71,  60)
+heatmor2 = (142, 131, 110)
+heatmor3 = (134,  66,  56)
+
+drilbur1 = (109, 111, 147)
+drilbur2 = ( 95,  81,  84)
+drilbur3 = ( 94,  81,  78)
+
 pokemon = [slugma1,slugma2,slugma3,
         starly,starly2,starly3,
         trapinch,trapinch2,trapinch3,
@@ -276,4 +284,6 @@ pokemon = [slugma1,slugma2,slugma3,
         buizel2,buizel3,electabuzz1,
         electabuzz2,electabuzz3,tangela1,
         tangela2,tangela3,wurmple4,
-        wurmple5,wurmple6]        
+        wurmple5,wurmple6,heatmor1,
+        heatmor2,heatmor3,drilbur1,
+        drilbur2,drilbur3]        

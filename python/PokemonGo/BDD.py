@@ -4,6 +4,8 @@ from colorama import Cursor
 import PokemonGoBDD
 import urllib.request
 
+#GL4mhMnebpPz
+
 pokemonsAtrapats = 0
   
 connection = {
